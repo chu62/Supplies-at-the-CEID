@@ -127,10 +127,10 @@ def advanced_search():
         elif not request.form.get("section"):
             return apology("must enter section to search")
             
-            supply = request.form.get("advanced_search")
-            section = request.form.get("section")
+        supply = request.form.get("advanced_search")
+        section = request.form.get("section")
         
-            rows = db.execute("SELECT * FROM supplies WHERE name = :name AND section = :section", name = supply, section = section)
+        rows = db.execute("SELECT * FROM supplies WHERE name = :name AND section = :section", name = supply, section = section)
         
         #set which image link to pass in
         if section == "Arts and Crafts Bench":

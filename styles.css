@@ -1,0 +1,121 @@
+.container
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* colors for navbar */
+.navbar-default .navbar-brand .blue
+{
+    color: #537fbe;
+}
+.navbar-default .navbar-brand .red
+{
+    color: #ea433b;
+}
+.navbar-default .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+.navbar-default .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+/* style center text */
+#center_text
+{
+    text-align: center;
+    font-size: 35px;
+    display: block;
+    position: relative;
+    top: 100px;
+}
+
+/* style section class */
+.section
+{
+    position: fixed;
+    display: block;
+    font-size: 16px;
+}
+
+#section_1
+{
+    right: 225px;
+    top: 255px;
+}
+
+#section_2
+{
+    right: 225px;
+    bottom: 290px;
+}
+
+#section_3
+{
+    right: 325px;
+    bottom: 210px;
+}
+
+#section_4
+{
+    right: 475px;
+    bottom: 210px;
+}
+
+#section_5
+{
+    right: 630px;
+    bottom: 210px;
+}
+
+#section_6
+{
+    left: 445px;
+    bottom: 210px;
+}
+
+#section_7
+{
+    left: 320px;
+    bottom: 245px;
+}
+
+#section_picture
+{
+    height: 300px;
+    width: 600px;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+#section_3
+{
+    /*border: 10px solid transparent;*/
+    background-color: transparent;
+            background-repeat:no-repeat;
+            border: none;
+            cursor:pointer;
+            overflow: hidden;
+}
+main td
+{
+    /* left-align tables' cells */
+    text-align: left;
+}

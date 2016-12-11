@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    General Search
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('advanced_search') }}" method="POST">
+    <fieldset>
+        <img id="section_picture" src="{{image_link}}" alt = "{{section}}" />
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="advanced_search" placeholder="Supply Name" type="text"/>
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="section" placeholder="Section Name" type="text"/>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-default" type="submit">Advanced Search</button>
+        </div>
+        <table style = "width:100%" cellspacing="15">
+            <tr>
+                <th>Supply</th>
+                <th>Quantity</th>
+                <th>Specifications</th>
+                <th>Section:</th>
+                <th>Region</th>
+                <th>Link to Buy</th>
+            </tr>
+            {% for row in rows %}
+                <tr>
+                    <td>{{row["name"]}}</td>
+                    <td>{{row["qnty"]}}</td>
+                    <td>{{row["specifications"]}}</td>
+                    <td>{{row["section"]}}</td>
+                    <td>{{row["section_region"]}}</td>
+                    <td>{{row["link_to_buy"]}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </fieldset>
+{% endblock %}

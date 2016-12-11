@@ -1,0 +1,12 @@
+TODO:
+-index html
+-general search html
+-how to import pics?
+-make an account info html
+-implement index such that:
+    it'll display the pic of the entire CEID as the background
+    have hover-over-able markers for individual sections-->shows you pictures of the idv sect that you can click on and takes you to
+    page specifically for that section
+    have the general search toolbar in the upper R hand side, underneath the nav bar
+    (^with general search and advanced search buttons next to it)
+    
